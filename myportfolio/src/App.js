@@ -40,9 +40,11 @@ const Wrapper = styled.div`
   vertical-align: middle;
   margin: auto;
   padding: 1.5rem;
+  height: 100vh;
+  width: 100vw;
   background-color: #f4f4f4;
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
 export default App;

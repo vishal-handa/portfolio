@@ -13,9 +13,7 @@ const Home = () => {
         <Name>Vishal Handa</Name>
         <Text>
           Looking for entry-level opportunities as a full stack web developer.
-          Experienced Assistant Coordinator with a demonstrated history of
-          working in the higher education industry. Skilled in HTML, vanilla
-          JavaScript, ReactJS, NodeJS, CSS and MongoDB{" "}
+          Skilled in HTML, vanilla JavaScript, ReactJS, NodeJS, CSS and MongoDB{" "}
         </Text>
         <ul>
           <Li>
@@ -48,14 +46,12 @@ const Section1 = styled.section`
 `;
 
 const Img = styled.img`
-  display: block;
-  height: 100%;
+  height: inherit;
   object-fit: cover;
   width: 100%;
 `;
 
 const Section2 = styled.section`
-  height: 100%;
   width: 50%;
   display: flex;
   flex-direction: column;
