@@ -42,11 +42,9 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  margin: auto;
   height: 100vh;
   width: 100vw;
   background-color: #f4f4f4;
-  overflow-x: hidden;
   overflow-y: hidden;
 `;
 

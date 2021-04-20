@@ -26,7 +26,6 @@ const Section1 = styled.section`
 
 const Img = styled.img`
   height: inherit;
-  object-fit: cover;
   width: 100%;
 `;
 
