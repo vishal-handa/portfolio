@@ -18,13 +18,13 @@ const Home = () => {
         </Text>
         <ul>
           <Li>
-            <StyledLink>About</StyledLink>
+            <StyledLink to={"/about"}>About</StyledLink>
           </Li>
           <Li>
-            <StyledLink>Work</StyledLink>
+            <StyledLink to={"/work"}>Work</StyledLink>
           </Li>
           <Li>
-            <StyledLink>Projects</StyledLink>
+            <StyledLink to={"/projects"}>Projects</StyledLink>
           </Li>
         </ul>
         <Icons>
@@ -85,7 +85,6 @@ const Section2 = styled.section`
 const Name = styled.h1`
   color: #555;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0;
   text-transform: uppercase;
@@ -111,6 +110,7 @@ const Text = styled.p`
   color: #444444;
   font-family: "Montserrat", sans-serif;
   font-size: 13.2px;
+  color: gray;
 `;
 
 const Li = styled.li`

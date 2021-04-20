@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import work from "./images/work.png";
+import projects from "./images/projects.png";
 
-const Work = () => {
+const Projects = () => {
   return (
     <Wrapper>
       <Section1>
-        <Img src={work} alt="Profile Pic" />
+        <Img src={projects} alt="Profile Pic" />
       </Section1>
       <Section2></Section2>
     </Wrapper>
@@ -47,4 +47,4 @@ const Section2 = styled.section`
   } */
 `;
 
-export default Work;
+export default Projects;
