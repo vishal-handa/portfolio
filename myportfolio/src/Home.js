@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Pic from "./images/profilepic.jfif";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -19,7 +20,6 @@ const Home = () => {
           <Li>
             <StyledLink>About</StyledLink>
           </Li>
-
           <Li>
             <StyledLink>Work</StyledLink>
           </Li>
@@ -27,6 +27,11 @@ const Home = () => {
             <StyledLink>Writings</StyledLink>
           </Li>
         </ul>
+        <Icons>
+          <FaLinkedin size={22} />
+          <FaGithub size={22} />
+          <FaEnvelope size={22} />
+        </Icons>
       </Section2>
     </Wrapper>
   );
@@ -102,12 +107,33 @@ const Text = styled.p`
 `;
 
 const Li = styled.li`
+  list-style: none;
+  &:nth-child(1)::after {
+    background-color: #cccccc;
+    content: "";
+    display: block;
+    height: 1.5em;
+    width: 1px;
+    margin: auto;
+  }
+  &:nth-child(2)::after {
+    background-color: #cccccc;
+    content: "";
+    display: block;
+    height: 1.5em;
+    left: 50%;
+    width: 1px;
+    margin: auto;
+  }
+`;
+
+const StyledLink = styled(Link)`
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   background-color: transparent;
   border-radius: 8px;
   border: 0;
   box-shadow: inset 0 0 0 1px #cccccc;
-  color: #555 !important;
+  color: gray;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
@@ -121,38 +147,24 @@ const Li = styled.li`
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-bottom: 1.5em;
-  &:nth-child(1)::after {
-    background-color: #cccccc;
-    content: "";
-    display: block;
-    height: 1.5em;
-    left: 50%;
-    position: absolute;
-    top: 100%;
-    width: 1px;
-  }
-  &:nth-child(2)::after {
-    background-color: #cccccc;
-    content: "";
-    display: block;
-    height: 1.5em;
-    left: 50%;
-    position: absolute;
-    top: 100%;
-    width: 1px;
-  }
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
   &:hover {
     outline: none;
     box-shadow: inset 0 0 0 1px #52cbee;
+    color: #52cbee;
   }
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  &:hover {
-    color: #52cbee;
+const Icons = styled.div`
+  display: flex;
+  justify-content: center;
+  svg {
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    &:hover {
+      fill: #52cbee;
+    }
   }
 `;
 
