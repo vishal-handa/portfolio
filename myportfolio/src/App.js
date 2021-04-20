@@ -39,7 +39,6 @@ const Wrapper = styled.div`
   align-items: center;
   vertical-align: middle;
   margin: auto;
-  padding: 1.5rem;
   height: 100vh;
   width: 100vw;
   background-color: #f4f4f4;

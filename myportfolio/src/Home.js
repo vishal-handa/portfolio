@@ -17,14 +17,14 @@ const Home = () => {
         </Text>
         <ul>
           <Li>
-            <Link>About</Link>
+            <StyledLink>About</StyledLink>
           </Li>
 
           <Li>
-            <Link>Work</Link>
+            <StyledLink>Work</StyledLink>
           </Li>
           <Li>
-            <Link>Writings</Link>
+            <StyledLink>Writings</StyledLink>
           </Li>
         </ul>
       </Section2>
@@ -38,6 +38,8 @@ const Wrapper = styled.div`
   background-color: white;
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
 const Section1 = styled.section`
@@ -62,6 +64,9 @@ const Section2 = styled.section`
   ul {
     display: flex;
     flex-direction: column;
+    max-width: 150px;
+    padding-left: 0;
+    align-self: center;
   }
 `;
 
@@ -116,6 +121,7 @@ const Li = styled.li`
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  margin-bottom: 1.5em;
   &:nth-child(1)::after {
     background-color: #cccccc;
     content: "";
@@ -139,6 +145,14 @@ const Li = styled.li`
   &:hover {
     outline: none;
     box-shadow: inset 0 0 0 1px #52cbee;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    color: #52cbee;
   }
 `;
 
