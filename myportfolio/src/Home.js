@@ -24,13 +24,22 @@ const Home = () => {
             <StyledLink>Work</StyledLink>
           </Li>
           <Li>
-            <StyledLink>Writings</StyledLink>
+            <StyledLink>Projects</StyledLink>
           </Li>
         </ul>
         <Icons>
-          <FaLinkedin size={22} />
-          <FaGithub size={22} />
-          <FaEnvelope size={22} />
+          <Anchor
+            href={"https://www.linkedin.com/in/vishal-handa/"}
+            target="_blank"
+          >
+            <FaLinkedin size={22} />
+          </Anchor>
+          <Anchor href={"https://github.com/vishal-handa"} target="_blank">
+            <FaGithub size={22} />
+          </Anchor>
+          <Anchor href="mailto:vishal.handa@outlook.com" target="_blank">
+            <FaEnvelope size={22} />
+          </Anchor>
         </Icons>
       </Section2>
     </Wrapper>
@@ -43,8 +52,6 @@ const Wrapper = styled.div`
   background-color: white;
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
-  overflow-y: hidden;
 `;
 
 const Section1 = styled.section`
@@ -161,10 +168,25 @@ const Icons = styled.div`
   justify-content: center;
   svg {
     cursor: pointer;
-    padding: 10px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
     &:hover {
       fill: #52cbee;
     }
+  }
+`;
+
+const Anchor = styled.a`
+  text-decoration: none;
+  &:link {
+    color: black;
+  }
+
+  &:visited {
+    color: black;
+  }
+
+  &:active {
+    color: black;
   }
 `;
 

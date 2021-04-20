@@ -8,6 +8,7 @@ import Writings from "./Writings";
 
 const App = () => {
   useEffect(() => {
+    document.title = "Vishal Handa || Portfolio";
     document.body.style.margin = "0";
   }, []);
   return (
