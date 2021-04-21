@@ -42,10 +42,9 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  height: 100vh;
-  width: 100vw;
+  padding: 3rem;
   background-color: #f4f4f4;
-  overflow-y: hidden;
+  overflow-x: hidden;
 `;
 
 export default App;

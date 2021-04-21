@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Pic from "./images/profilepic.jfif";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
 
 const Home = () => {
   return (
@@ -47,22 +48,38 @@ const Home = () => {
 };
 
 const Wrapper = styled.div`
-  height: 90%;
-  width: 80%;
   background-color: white;
   display: flex;
   flex-direction: row;
+  ${onTablet()} {
+    display: flex;
+    flex-direction: column;
+  }
+  ${onPhone()} {
+    display: flex;
+    flex-direction: column;
+    padding: none;
+  }
 `;
 
 const Section1 = styled.section`
   height: 100%;
   width: 50%;
+  ${onTablet()} {
+    width: 100%;
+    height: 50vh;
+  }
+  ${onPhone()} {
+    width: 100%;
+    height: 30vh;
+  }
 `;
 
 const Img = styled.img`
   height: inherit;
   object-fit: cover;
   width: 100%;
+  height: 100%;
 `;
 
 const Section2 = styled.section`
@@ -72,13 +89,24 @@ const Section2 = styled.section`
   justify-content: center;
   text-align: center;
   margin: auto;
-  padding: 3em 2.5em;
+
   ul {
     display: flex;
     flex-direction: column;
     max-width: 150px;
     padding-left: 0;
     align-self: center;
+  }
+  ${onDesktop()} {
+    padding: 3em 2.5em;
+  }
+  ${onTablet()} {
+    width: 100%;
+    padding: 20px;
+  }
+  ${onPhone()} {
+    width: 100%;
+    padding: 20px;
   }
 `;
 
