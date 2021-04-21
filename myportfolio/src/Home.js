@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Pic from "./images/profilepic.jfif";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
+import {
+  onPhone,
+  onDesktop,
+  onTablet,
+  onWideDesktop,
+} from "./utils/responsivecode";
 
 const Home = () => {
   return (
@@ -49,8 +54,16 @@ const Home = () => {
 
 const Wrapper = styled.div`
   background-color: white;
+
   display: flex;
   flex-direction: row;
+  /* width: 75em; */
+
+  ${onDesktop()} {
+    display: flex;
+    flex-direction: row;
+    max-width: calc(100vw - 3em);
+  }
   ${onTablet()} {
     display: flex;
     flex-direction: column;
@@ -58,7 +71,6 @@ const Wrapper = styled.div`
   ${onPhone()} {
     display: flex;
     flex-direction: column;
-    padding: none;
   }
 `;
 
@@ -67,7 +79,7 @@ const Section1 = styled.section`
   width: 50%;
   ${onTablet()} {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
   }
   ${onPhone()} {
     width: 100%;
@@ -88,7 +100,6 @@ const Section2 = styled.section`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: auto;
 
   ul {
     display: flex;
@@ -99,14 +110,15 @@ const Section2 = styled.section`
   }
   ${onDesktop()} {
     padding: 3em 2.5em;
+    margin: auto;
   }
   ${onTablet()} {
-    width: 100%;
-    padding: 20px;
+    width: 70%;
+    padding: 30px;
   }
   ${onPhone()} {
-    width: 100%;
-    padding: 20px;
+    width: 70%;
+    padding: 30px;
   }
 `;
 
