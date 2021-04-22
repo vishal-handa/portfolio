@@ -54,11 +54,8 @@ const Home = () => {
 
 const Wrapper = styled.div`
   background-color: white;
-
   display: flex;
   flex-direction: row;
-  /* width: 75em; */
-
   ${onDesktop()} {
     display: flex;
     flex-direction: row;
@@ -75,8 +72,13 @@ const Wrapper = styled.div`
 `;
 
 const Section1 = styled.section`
-  height: 100%;
   width: 50%;
+  ${onDesktop()} {
+    height: 100%;
+  }
+  @media (max-width: 1230px) and (min-width: 981px) {
+    height: inherit;
+  }
   ${onTablet()} {
     width: 100%;
     height: 60vh;
@@ -88,7 +90,7 @@ const Section1 = styled.section`
 `;
 
 const Img = styled.img`
-  height: inherit;
+  height: 100%;
   object-fit: cover;
   width: 100%;
   height: 100%;
