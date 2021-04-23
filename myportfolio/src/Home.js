@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Pic from "./images/profilepic.jfif";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import {
-  onPhone,
-  onDesktop,
-  onTablet,
-  onWideDesktop,
-} from "./utils/responsivecode";
+import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
 
 const Home = () => {
   return (
@@ -93,7 +88,6 @@ const Img = styled.img`
   height: 100%;
   object-fit: cover;
   width: 100%;
-  height: 100%;
 `;
 
 const Section2 = styled.section`

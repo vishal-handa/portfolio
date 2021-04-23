@@ -5,17 +5,12 @@ import Home from "./Home";
 import About from "./About";
 import Work from "./Work";
 import Projects from "./Projects";
-import {
-  onPhone,
-  onDesktop,
-  onTablet,
-  onWideDesktop,
-} from "./utils/responsivecode";
+import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
 
 const App = () => {
-  const [home, setHome] = useState(false);
-  const [work, setWork] = useState(false);
-  const [projects, setProjects] = useState(false);
+  // const [home, setHome] = useState(false);
+  // const [work, setWork] = useState(false);
+  // const [projects, setProjects] = useState(false);
   useEffect(() => {
     document.title = "Vishal Handa || Portfolio";
     document.body.style.margin = "0";
@@ -48,7 +43,6 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  padding: 3rem;
   background-color: #f4f4f4;
   overflow-x: hidden;
   ${onDesktop()} {
