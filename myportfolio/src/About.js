@@ -36,7 +36,7 @@ const Wrapper = styled.div`
 const Section1 = styled.section`
   width: 50%;
   ${onDesktop()} {
-    height: 100%;
+    height: inherit;
   }
   @media (max-width: 1230px) and (min-width: 981px) {
     height: inherit;

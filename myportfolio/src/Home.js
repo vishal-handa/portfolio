@@ -14,12 +14,15 @@ const Home = () => {
       <Section2>
         <Name>Vishal Handa</Name>
         <Text>
-          Looking for entry-level opportunities as a full stack web developer.
-          Skilled in HTML, vanilla JavaScript, ReactJS, NodeJS, CSS and MongoDB{" "}
+          Cheers! I am Vishal, currently based in Montreal, Canada, dreaming
+          about starting a new journey as a web developer, and feeling
+          venturesome about my future in the industry. <br />
+          <br />
+          Click below to know more about me!
         </Text>
         <ul>
           <Li>
-            <StyledLink to={"/about"}>About</StyledLink>
+            <StyledLink to={"/about"}>About me</StyledLink>
           </Li>
           <Li>
             <StyledLink to={"/work"}>Work</StyledLink>
@@ -69,7 +72,7 @@ const Wrapper = styled.div`
 const Section1 = styled.section`
   width: 50%;
   ${onDesktop()} {
-    height: 100%;
+    height: inherit;
   }
   @media (max-width: 1230px) and (min-width: 981px) {
     height: inherit;
@@ -138,15 +141,16 @@ const Name = styled.h1`
 `;
 
 const Text = styled.p`
-  font-size: 0.9em;
-  letter-spacing: 0.25em;
+  font-size: 1em;
   margin-bottom: 0;
   text-transform: uppercase;
   margin: 0 0 2em 0;
   color: #444444;
   font-family: "Montserrat", sans-serif;
-  font-size: 13.2px;
   color: gray;
+  text-transform: none;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 `;
 
 const Li = styled.li`
