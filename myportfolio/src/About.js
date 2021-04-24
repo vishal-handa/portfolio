@@ -28,16 +28,17 @@ const About = () => {
             <img />
           </p>
           <p>
-            I grew up in a bustling city of Amritsar in India, that was full of
-            the old world charm.
+            I grew up in Amritsar, India, a bustling city that was full of the
+            old world charm, spirituality, and whole lot of tasty and spicy
+            food.
           </p>
           <p>
             The very first programming language I learned was BASIC, but I
-            quickly transition to Java when it was still under Sun Microsystems.
-            Yes, it was that long ago. Over the years I developed skills as a
-            programmer in electronics industry (owing to my bachelors major) by
-            learning C++, C, Embedded C, VHDL and Verilog HDL. None of that was
-            staisfying enough for my soul.
+            quickly transitioned to Java when it was still under Sun
+            Microsystems. Yes, it was that long ago. Over the years I developed
+            skills as a programmer in electronics industry (owing to my
+            bachelors major) by learning C++, C, Embedded C, VHDL and Verilog
+            HDL. None of that was staisfying enough for my soul.
           </p>
           <p>
             {"<violins>"}Then I came to Canada, where I got to explore myself at
@@ -50,10 +51,17 @@ const About = () => {
             a web developer with the skills that I have learned.
           </p>
           <p>
-            {"<inspirationalMusic>"}I am still learning a lot and will continue
-            to do so until there is breath in my body.{"</inspirationalMusic>"}
+            Apart from my learnings, I wouldn't be a human being if I devote all
+            of my time to learning and developing new skills. In my spare time I
+            like to watch fantasy shows and films, test my couch for softness
+            gradient in various positions, mixing and having cups of different
+            types tea (outrageous, I know), and taking pictures of my darling
+            cat, Bella, bringing justice to the following meme.
           </p>
-          <p>That last statement was purely for a dramatic effect.</p>
+          <p>
+            If you'd like to know more, or just want to say "Hi", shoot me an{" "}
+            <a href="mailto:vishal.handa@outlook.com">email</a>. Merci!
+          </p>
         </Text>
       </Section2>
     </Wrapper>
