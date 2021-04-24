@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import about from "./images/about.jpg";
 import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
@@ -9,7 +10,52 @@ const About = () => {
       <Section1>
         <Img src={about} alt="Profile Pic" />
       </Section1>
-      <Section2></Section2>
+      <Section2>
+        <StyledLink exact to={"/"}>
+          Back
+        </StyledLink>
+        <Text>
+          Hi! It is time for me to force some of my personal information on you
+          which you never asked for, so you see me as a human and not just as a
+          source of revenue (though I will be a good one, I can tell you that!).
+          <br />
+          <p>
+            But first, here is me when I was ? years old.
+            <img />
+          </p>
+          <p>
+            Yes, I once was of that age, but here's is me now.
+            <img />
+          </p>
+          <p>
+            I grew up in a bustling city of Amritsar in India, that was full of
+            the old world charm.
+          </p>
+          <p>
+            The very first programming language I learned was BASIC, but I
+            quickly transition to Java when it was still under Sun Microsystems.
+            Yes, it was that long ago. Over the years I developed skills as a
+            programmer in electronics industry (owing to my bachelors major) by
+            learning C++, C, Embedded C, VHDL and Verilog HDL. None of that was
+            staisfying enough for my soul.
+          </p>
+          <p>
+            {"<violins>"}Then I came to Canada, where I got to explore myself at
+            the professional level, and even though it it took me some time, but
+            I finally decided to follow what I wanted.{"</violins>"}
+          </p>
+          <p>
+            I am now a diploma holder of a Full Stack Web Development course
+            offered by Concordia University. I am hoping to land my first job as
+            a web developer with the skills that I have learned.
+          </p>
+          <p>
+            {"<inspirationalMusic>"}I am still learning a lot and will continue
+            to do so until there is breath in my body.{"</inspirationalMusic>"}
+          </p>
+          <p>That last statement was purely for a dramatic effect.</p>
+        </Text>
+      </Section2>
     </Wrapper>
   );
 };
@@ -59,10 +105,8 @@ const Img = styled.img`
 
 const Section2 = styled.section`
   width: 50%;
-
   ${onDesktop()} {
     padding: 3em 2.5em;
-    margin: auto;
   }
   ${onTablet()} {
     width: 70%;
@@ -72,6 +116,48 @@ const Section2 = styled.section`
     width: 70%;
     padding: 30px;
   }
+`;
+
+const StyledLink = styled(Link)`
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #cccccc;
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 500;
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.5em;
+  padding: 0 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #52cbee;
+    color: #52cbee;
+  }
+`;
+
+const Text = styled.p`
+  font-size: 1em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  margin: 0 0 2em 0;
+  color: #444444;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  text-transform: none;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 `;
 
 export default About;
