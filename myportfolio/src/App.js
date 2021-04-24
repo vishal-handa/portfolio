@@ -45,6 +45,7 @@ const Wrapper = styled.div`
   vertical-align: middle;
   background-color: #f4f4f4;
   overflow-x: hidden;
+  padding: 3rem;
   ${onDesktop()} {
     padding: 3rem;
   }
