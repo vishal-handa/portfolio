@@ -25,7 +25,7 @@ const Home = () => {
             <StyledLink to={"/about"}>About me</StyledLink>
           </Li>
           <Li>
-            <StyledLink to={"/work"}>Work</StyledLink>
+            <StyledLink to={"/work"}>Skills</StyledLink>
           </Li>
           <Li>
             <StyledLink to={"/projects"}>Projects</StyledLink>

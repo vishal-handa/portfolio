@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import about from "./images/about.jpg";
 import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
 import babypic from "./images/mypic1.jpg";
 

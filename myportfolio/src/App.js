@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import Work from "./Work";
+import Skills from "./Skills";
 import Projects from "./Projects";
 import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
 
@@ -26,7 +26,7 @@ const App = () => {
             <About />
           </Route>
           <Route path="/work">
-            <Work />
+            <Skills />
           </Route>
           <Route path="/projects">
             <Projects />
