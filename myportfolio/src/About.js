@@ -20,6 +20,7 @@ const About = () => {
         <StyledLink exact to={"/"}>
           Back
         </StyledLink>
+        <AboutMe>About Me</AboutMe>
         <Text>
           Hi! It is time for me to force some of my personal information on you
           which you never asked for, so you see me as a human and not just as a
@@ -148,7 +149,7 @@ const StyledLink = styled(Link)`
   color: gray;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 500;
   height: 3.5em;
   letter-spacing: 0.25em;
@@ -159,12 +160,29 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  width: 100px;
   font-family: "Montserrat", sans-serif;
   &:hover {
     outline: none;
     box-shadow: inset 0 0 0 1px #52cbee;
     color: #52cbee;
+  }
+`;
+
+const AboutMe = styled.h1`
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 1em 0 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  &::after {
+    content: "";
+    display: block;
+    background-color: #cccccc;
+    height: 1px;
+    margin: 1.5rem 0 1.75rem 0;
+    width: 5rem;
   }
 `;
 
