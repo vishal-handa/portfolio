@@ -41,6 +41,7 @@ const Img = styled.img`
   height: inherit;
   object-fit: cover;
   width: inherit;
+  filter: blur(3px);
 `;
 
 // const Section2 = styled.section`

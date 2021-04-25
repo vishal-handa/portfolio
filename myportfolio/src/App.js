@@ -5,7 +5,12 @@ import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import { onPhone, onDesktop, onTablet } from "./utils/responsivecode";
+import {
+  onPhone,
+  onDesktop,
+  onTablet,
+  onWideDesktop,
+} from "./utils/responsivecode";
 
 const App = () => {
   // const [home, setHome] = useState(false);
@@ -46,6 +51,9 @@ const Wrapper = styled.div`
   background-color: #f4f4f4;
   overflow-x: hidden;
   padding: 3rem;
+  ${onWideDesktop()} {
+    padding: 3rem;
+  }
   ${onDesktop()} {
     padding: 3rem;
   }
