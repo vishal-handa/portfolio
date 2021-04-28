@@ -8,10 +8,16 @@ import {
   onWideDesktop,
 } from "./utils/responsivecode";
 import ProgressBar from "react-customizable-progressbar";
-import { AiFillHtml5 } from "react-icons/ai";
+import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
-import { IoLogoNodejs, IoLogoReact, IoLogoJavascript } from "react-icons/io5";
+import {
+  IoLogoNodejs,
+  IoLogoReact,
+  IoLogoJavascript,
+  IoLogoFirebase,
+} from "react-icons/io5";
 import { DiMongodb } from "react-icons/di";
+import { SiCplusplus } from "react-icons/si";
 
 const Skills = () => {
   const [animation, setAnimation] = useState(true);
@@ -21,7 +27,7 @@ const Skills = () => {
   return (
     <Wrapper>
       <Section1>
-        <ProgressBar
+        <StyledProgressBar
           radius={50}
           progress={66}
           strokeWidth={10}
@@ -35,8 +41,8 @@ const Skills = () => {
           <SVG>
             <AiFillHtml5 size={55} fill="#CD5C5C" />
           </SVG>
-        </ProgressBar>
-        <ProgressBar
+        </StyledProgressBar>
+        <StyledProgressBar
           radius={50}
           progress={66}
           strokeWidth={10}
@@ -50,8 +56,8 @@ const Skills = () => {
           <SVG>
             <IoLogoCss3 size={55} fill="#5d9cec" />
           </SVG>
-        </ProgressBar>
-        <ProgressBar
+        </StyledProgressBar>
+        <StyledProgressBar
           radius={50}
           progress={66}
           strokeWidth={10}
@@ -65,8 +71,8 @@ const Skills = () => {
           <SVG>
             <IoLogoJavascript size={55} fill="#EFD81D" />
           </SVG>
-        </ProgressBar>
-        <ProgressBar
+        </StyledProgressBar>
+        <StyledProgressBar
           radius={50}
           progress={66}
           strokeWidth={10}
@@ -80,8 +86,8 @@ const Skills = () => {
           <SVG>
             <IoLogoReact size={55} fill="#5CD3F3" />
           </SVG>
-        </ProgressBar>
-        <ProgressBar
+        </StyledProgressBar>
+        <StyledProgressBar
           radius={50}
           progress={66}
           strokeWidth={10}
@@ -95,8 +101,8 @@ const Skills = () => {
           <SVG>
             <IoLogoNodejs size={55} fill="#509941" />
           </SVG>
-        </ProgressBar>
-        <ProgressBar
+        </StyledProgressBar>
+        <StyledProgressBar
           radius={50}
           progress={66}
           strokeWidth={10}
@@ -110,13 +116,87 @@ const Skills = () => {
           <SVG>
             <DiMongodb size={55} fill="#95D343" />
           </SVG>
-        </ProgressBar>
+        </StyledProgressBar>
+        <StyledProgressBar
+          radius={50}
+          progress={66}
+          strokeWidth={10}
+          strokeColor="#6295CB"
+          strokeLinecap="round"
+          trackStrokeWidth={10}
+          trackTransition="1s ease"
+          transition="0.7s ease"
+          initialAnimation={animation}
+        >
+          <SVG>
+            <SiCplusplus size={55} fill="#6295CB" />
+          </SVG>
+        </StyledProgressBar>
+        <StyledProgressBar
+          radius={50}
+          progress={66}
+          strokeWidth={10}
+          strokeColor="#000000"
+          strokeLinecap="round"
+          trackStrokeWidth={10}
+          trackTransition="1s ease"
+          transition="0.7s ease"
+          initialAnimation={animation}
+        >
+          <SVG>
+            <AiFillGithub size={55} fill="#000000" />
+          </SVG>
+        </StyledProgressBar>
+        <StyledProgressBar
+          radius={50}
+          progress={66}
+          strokeWidth={10}
+          strokeColor="#ED7E0D"
+          strokeLinecap="round"
+          trackStrokeWidth={10}
+          trackTransition="1s ease"
+          transition="0.7s ease"
+          initialAnimation={animation}
+        >
+          <SVG>
+            <IoLogoFirebase size={55} fill="#ED7E0D" />
+          </SVG>
+        </StyledProgressBar>
       </Section1>
       <Section2>
         <StyledLink exact to={"/"}>
           Back
         </StyledLink>
         <Skillset>Why hire me?</Skillset>
+        <Text>
+          I am a responsible, goal oriented, and a meticulous person with
+          multiple skill set to put my talen to practice, to learn more and grow
+          as a professional individual.
+        </Text>
+        <Text>
+          With the knowledge of MERN stack, I have developed skills to take
+          initial, on-paper architechture to a full-fledged workign website
+          bothe through front-end and backend web developement.
+        </Text>
+        <Text>
+          Add to this my past experience as an administrative officer at
+          Concordia University, I bring
+          <ul>
+            <li>professional attitude</li>
+            <li>respectful attitude to time deadlines</li>
+            <li>meticulousness to detailed tasks</li>
+            <li>openness to constructive criticism</li>
+            <li>expertise in working under high workload</li>
+          </ul>
+          to the table.
+        </Text>
+
+        <Text>
+          I assure you that with skills mentioned above, both professional and
+          personal, I can be an asset to any team or company. If you want to
+          know more do not hesitate to contact me via email, and I will get
+          right back to you.
+        </Text>
       </Section2>
     </Wrapper>
   );
@@ -151,6 +231,10 @@ const Section1 = styled.section`
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  @media only screen, (max-width: 1281px) {
+    padding: 3em;
+  }
   ${onDesktop()} {
     height: inherit;
   }
@@ -159,11 +243,9 @@ const Section1 = styled.section`
   }
   ${onTablet()} {
     width: 100%;
-    height: 60vh;
   }
   ${onPhone()} {
     width: 100%;
-    height: 60vh;
   }
 `;
 
@@ -183,6 +265,27 @@ const Section2 = styled.section`
   ${onPhone()} {
     width: 90%;
     padding: 30px;
+  }
+`;
+
+const StyledProgressBar = styled(ProgressBar)`
+  @media only screen, (max-width: 1281px) {
+    /* transform: scale(1.8); */
+    margin-inline-start: 10px;
+  }
+  ${onDesktop()} {
+    transform: scale(1);
+    height: 150px;
+  }
+  ${onTablet()} {
+    transform: scale(1);
+    margin: 10px;
+    height: 150px;
+  }
+  ${onPhone()} {
+    transform: scale(1);
+    margin: 10px;
+    height: 150px;
   }
 `;
 
@@ -235,6 +338,35 @@ const Skillset = styled.h1`
     height: 1px;
     margin: 1.5rem 0 1.75rem 0;
     width: 5rem;
+  }
+`;
+
+const Text = styled.p`
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0 0 2em 0;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  text-transform: none;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+
+  @media only screen, (max-width: 1281px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  ${onDesktop()} {
+    font-size: 1em;
+    line-height: 1.3;
+  }
+  ${onTablet()} {
+    font-size: 1em;
+    line-height: 1.3;
+  }
+  ${onPhone()} {
+    font-size: 1em;
+    line-height: 1.3;
   }
 `;
 
