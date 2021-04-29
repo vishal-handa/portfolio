@@ -18,6 +18,7 @@ import {
 } from "react-icons/io5";
 import { DiMongodb } from "react-icons/di";
 import { SiCplusplus } from "react-icons/si";
+import work from "./images/work.png";
 
 const Skills = () => {
   const [animation, setAnimation] = useState(true);
@@ -234,6 +235,8 @@ const Section1 = styled.section`
   justify-content: space-evenly;
   align-items: center;
   vertical-align: middle;
+  transition: all 0.3s linear;
+
   @media only screen, (max-width: 1281px) {
     padding: 3em 2.5em;
   }
@@ -274,6 +277,7 @@ const Section2 = styled.section`
 `;
 
 const StyledProgressBar = styled(ProgressBar)`
+  transition: all 0.3s linear;
   @media only screen, (max-width: 1281px) {
     transform: scale(1.4);
     margin-inline-start: 10px;
