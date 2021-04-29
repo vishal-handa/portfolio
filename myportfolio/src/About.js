@@ -166,6 +166,9 @@ const StyledLink = styled(Link)`
     box-shadow: inset 0 0 0 1px #52cbee;
     color: #52cbee;
   }
+  &:active {
+    background-color: rgba(73, 200, 255, 0.05);
+  }
 `;
 
 const AboutMe = styled.h1`
