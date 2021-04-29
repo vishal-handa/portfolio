@@ -241,19 +241,15 @@ const Section1 = styled.section`
     padding: 3em 2.5em;
   }
   ${onDesktop()} {
-    height: inherit;
     padding: 3em 2.5em;
   }
-  @media (max-width: 1230px) and (min-width: 981px) {
-    height: inherit;
-  }
   ${onTablet()} {
-    width: 90%;
-    padding: 30px;
+    width: 100%;
+    padding: 0px;
   }
   ${onPhone()} {
-    width: 90%;
-    padding: 30px;
+    width: 100%;
+    padding: 0px;
   }
 `;
 
