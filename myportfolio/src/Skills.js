@@ -231,21 +231,26 @@ const Section1 = styled.section`
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  vertical-align: middle;
   @media only screen, (max-width: 1281px) {
-    padding: 3em;
+    padding: 3em 2.5em;
   }
   ${onDesktop()} {
     height: inherit;
+    padding: 3em 2.5em;
   }
   @media (max-width: 1230px) and (min-width: 981px) {
     height: inherit;
   }
   ${onTablet()} {
-    width: 100%;
+    width: 90%;
+    padding: 30px;
   }
   ${onPhone()} {
-    width: 100%;
+    width: 90%;
+    padding: 30px;
   }
 `;
 
@@ -270,11 +275,11 @@ const Section2 = styled.section`
 
 const StyledProgressBar = styled(ProgressBar)`
   @media only screen, (max-width: 1281px) {
-    /* transform: scale(1.8); */
+    transform: scale(1.4);
     margin-inline-start: 10px;
   }
   ${onDesktop()} {
-    transform: scale(1);
+    transform: scale(1.2);
     height: 150px;
   }
   ${onTablet()} {
