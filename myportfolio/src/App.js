@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
@@ -13,9 +13,6 @@ import {
 } from "./utils/responsivecode";
 
 const App = () => {
-  // const [home, setHome] = useState(false);
-  // const [work, setWork] = useState(false);
-  // const [projects, setProjects] = useState(false);
   useEffect(() => {
     document.title = "Vishal Handa || Portfolio";
     document.body.style.margin = "0";

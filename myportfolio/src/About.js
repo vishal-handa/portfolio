@@ -17,23 +17,18 @@ const About = () => {
         <Img src={about} alt="Profile Pic" />
       </Section1>
       <Section2>
-        <StyledLink exact to={"/"}>
-          Back
-        </StyledLink>
+        <StyledLink to={"/"}>Back</StyledLink>
         <AboutMe>About Me</AboutMe>
         <Text>
           Hi! It is time for me to force some of my personal information on you
           which you never asked for, so you see me as a human and not just as a
           source of revenue (though I will be a good one, I can tell you that!).
         </Text>
-        <br />
-        <Text>But first, here is me when I was 8 years old.</Text>
-        <img src={babypic} />
 
-        <Text>
-          Yes, I once was of that age, but this is me now.
-          <img />
-        </Text>
+        <Text>But first, here is me when I was 8 years old.</Text>
+        <img src={babypic} alt="Younger pic" />
+
+        <Text>Yes, I once was of that age, but this is me now.</Text>
         <Text>
           I grew up in Amritsar, India, a bustling city that was full of the old
           world charm, spirituality, and whole lot of tasty and spicy food.

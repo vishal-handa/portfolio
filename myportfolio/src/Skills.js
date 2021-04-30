@@ -17,8 +17,8 @@ import {
   IoLogoFirebase,
 } from "react-icons/io5";
 import { DiMongodb } from "react-icons/di";
-import { SiCplusplus } from "react-icons/si";
-import work from "./images/work.png";
+import { SiRedux } from "react-icons/si";
+// import work from "./images/work.png";
 
 const Skills = () => {
   const [animation, setAnimation] = useState(true);
@@ -122,7 +122,7 @@ const Skills = () => {
           radius={50}
           progress={66}
           strokeWidth={10}
-          strokeColor="#6295CB"
+          strokeColor="#7D42BF"
           strokeLinecap="round"
           trackStrokeWidth={10}
           trackTransition="1s ease"
@@ -130,7 +130,7 @@ const Skills = () => {
           initialAnimation={animation}
         >
           <SVG>
-            <SiCplusplus size={55} fill="#6295CB" />
+            <SiRedux size={55} fill="#7D42BF" />
           </SVG>
         </StyledProgressBar>
         <StyledProgressBar
@@ -165,9 +165,7 @@ const Skills = () => {
         </StyledProgressBar>
       </Section1>
       <Section2>
-        <StyledLink exact to={"/"}>
-          Back
-        </StyledLink>
+        <StyledLink to={"/"}>Back</StyledLink>
         <Skillset>Why hire me?</Skillset>
         <Text>
           I am a responsible, goal oriented, and a meticulous person with
@@ -181,17 +179,15 @@ const Skills = () => {
         </Text>
         <Text>
           Add to this my past experience as an administrative officer at
-          Concordia University, I bring
+          Concordia University, I bring following skills to the table.
           <ul>
-            <li>professional attitude</li>
-            <li>respectful attitude to time deadlines</li>
-            <li>meticulousness to detailed tasks</li>
-            <li>openness to constructive criticism</li>
-            <li>expertise in working under high workload</li>
+            <li>Professional attitude</li>
+            <li>Respectful attitude to time deadlines</li>
+            <li>Meticulousness to detailed tasks</li>
+            <li>Openness to constructive criticism</li>
+            <li>Expertise in working under high workload</li>
           </ul>
-          to the table.
         </Text>
-
         <Text>
           I assure you that with skills mentioned above, both professional and
           personal, I can be an asset to any team or company. If you want to
