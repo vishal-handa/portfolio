@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import {
+  onPhone,
+  onDesktop,
+  onTablet,
+  onWideDesktop,
+} from "./utils/responsivecode";
 import projects from "./images/projects.png";
 
 const Projects = () => {
@@ -14,9 +20,28 @@ const Projects = () => {
 };
 
 const Wrapper = styled.div`
-  height: 90%;
-  width: 80%;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  ${onWideDesktop()} {
+    display: flex;
+    flex-direction: row;
+    max-width: calc(100vw - 3em);
+    height: inherit;
+  }
+  ${onDesktop()} {
+    display: flex;
+    flex-direction: row;
+    max-width: calc(100vw - 3em);
+  }
+  ${onTablet()} {
+    display: flex;
+    flex-direction: column;
+  }
+  ${onPhone()} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Section1 = styled.section`

@@ -57,7 +57,7 @@ const About = () => {
           like to watch fantasy shows and films, test my couch for softness
           gradient in various positions, mixing and having cups of different
           types tea (outrageous, I know), and taking pictures of my darling cat,
-          Bella, bringing justice to the following meme.
+          Bella.
         </Text>
         <Text>
           If you'd like to know more, or just want to say "Hi", shoot me an{" "}
