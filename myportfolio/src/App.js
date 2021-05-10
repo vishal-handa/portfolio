@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import GlobalStyles from "./GlobalStyles";
 import {
   onPhone,
   onDesktop,
@@ -19,6 +20,7 @@ const App = () => {
   }, []);
   return (
     <Wrapper>
+      {/* <GlobalStyles /> */}
       <Router>
         <Switch>
           <Route exact path="/">
