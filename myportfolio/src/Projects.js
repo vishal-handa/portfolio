@@ -20,7 +20,7 @@ const Projects = () => {
         <Img src={projects} alt="Profile Pic" />
       </Section1> */}
       <Section>
-        <LazyLoad throttle={200} height={300}>
+        <LazyLoad height={200} offset={-100}>
           <Animated animationIn="fadeIn" isVisible={true}>
             <Div>
               <Img src={project1} alt="Project 1" />
@@ -65,29 +65,86 @@ const Projects = () => {
             </Div>
           </Animated>
         </LazyLoad>
-        <LazyLoad throttle={200} height={300}>
+        <LazyLoad height={200} offset={-300}>
           <Animated animationIn="fadeIn" isVisible={true}>
             <Div>
-              <Text>
-                Hi! It is time for me to force some of my personal information
-                on you which you never asked for, so you see me as a human and
-                not just as a source of revenue (though I will be a good one, I
-                can tell you that!).
-              </Text>
               <Img src={project2} alt="Project 2" />
+              <Explanation>
+                <H1>Wearable E-commerce App</H1>
+                <Text>
+                  The main objective was to create an e-commerce store that
+                  sells wearable technologies, and to develop a user-friendly
+                  website that allows customers to easily navigate through the
+                  dataset of 300+ products and to go through a purchase process
+                  once products had been added to their cart.
+                </Text>
+                <Text>
+                  Key features include:
+                  <ul>
+                    <li>Animated burger menu</li>
+                    <li>Sorting of products with price</li>
+                    <li>Pagination</li>
+                    <li>Persisted state using local storage</li>
+                    <li>
+                      Immediate database update and cart update on item select
+                    </li>
+                  </ul>
+                </Text>
+                <Icons>
+                  <Anchor
+                    href={"https://github.com/vishal-handa/group-project"}
+                    target="_blank"
+                  >
+                    <FaGithub size={25} />
+                  </Anchor>
+                  <Anchor
+                    href={"https://www.youtube.com/watch?v=JdcXoHi-IlI"}
+                    target="_blank"
+                  >
+                    <FaYoutube size={25} />
+                  </Anchor>
+                </Icons>
+              </Explanation>
             </Div>
           </Animated>
-        </LazyLoad>
-        <LazyLoad throttle={200} height={300}>
+        </LazyLoad>{" "}
+        <LazyLoad height={200} offset={-100}>
           <Animated animationIn="fadeIn" isVisible={true}>
             <Div>
               <Img src={project3} alt="Project 3" />
-              <Text>
-                Hi! It is time for me to force some of my personal information
-                on you which you never asked for, so you see me as a human and
-                not just as a source of revenue (though I will be a good one, I
-                can tell you that!).
-              </Text>
+              <Explanation>
+                <H1>Squeaky Centaurs Game</H1>
+                <Text>Creating a game using HTML, CSS and JavaScript</Text>
+                <Text>
+                  Key features include:
+                  <ul>
+                    <li>Ability to see shifts in a calendar format</li>
+                    <li>Ability to cancel shifts and take cancelled shitfs</li>
+                    <li>Add new employees, and sort them by their status</li>
+                    <li>
+                      Create new shifts, and send mass emails by date to users
+                    </li>
+                    <li>Update, cancel and delete shifts</li>
+                    <li>Change status of employees</li>
+                  </ul>
+                </Text>
+                <Icons>
+                  <Anchor
+                    href={
+                      "https://github.com/vishal-handa/employee-management-system"
+                    }
+                    target="_blank"
+                  >
+                    <FaGithub size={25} />
+                  </Anchor>
+                  <Anchor
+                    href={"https://www.youtube.com/watch?v=mQHOisYC7dQ"}
+                    target="_blank"
+                  >
+                    <FaYoutube size={25} />
+                  </Anchor>
+                </Icons>
+              </Explanation>
             </Div>
           </Animated>
         </LazyLoad>
@@ -123,7 +180,7 @@ const Wrapper = styled.div`
 
 const Img = styled.img`
   height: inherit;
-  width: 30%;
+  width: 40%;
 `;
 
 const Section = styled.section`
@@ -137,8 +194,25 @@ const Div = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-  &:nth-child(even) {
+  &:nth-child(2) {
     flex-direction: row-reverse;
+  }
+  ${onWideDesktop()} {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+  }
+  ${onDesktop()} {
+    display: flex;
+    flex-direction: row;
+  }
+  ${onTablet()} {
+    display: flex;
+    flex-direction: column;
+  }
+  ${onPhone()} {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
