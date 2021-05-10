@@ -189,7 +189,6 @@ const Wrapper = styled.div`
 const Img = styled.img`
   height: 30%;
   width: 40%;
-  object-fit: cover;
   margin: auto;
   border: 0.5px solid gray;
   ${onWideDesktop()} {
@@ -202,11 +201,11 @@ const Img = styled.img`
   }
   ${onTablet()} {
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
   }
   ${onPhone()} {
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
   }
 `;
 
