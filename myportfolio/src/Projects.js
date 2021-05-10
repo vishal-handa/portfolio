@@ -188,16 +188,16 @@ const Wrapper = styled.div`
 
 const Img = styled.img`
   height: 30%;
-  width: 40%;
+  width: 50%;
   margin: auto;
   border: 0.5px solid gray;
   ${onWideDesktop()} {
     height: 30%;
-    width: 40%;
+    width: 50%;
   }
   ${onDesktop()} {
     height: 30%;
-    width: 40%;
+    width: 50%;
   }
   ${onTablet()} {
     width: 100%;
