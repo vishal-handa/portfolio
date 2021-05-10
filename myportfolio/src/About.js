@@ -28,7 +28,9 @@ const About = () => {
         <Text>But first, here is me when I was 8 years old.</Text>
         <img src={babypic} alt="Younger pic" />
 
-        <Text>Yes, I once was of that age, but this is me now.</Text>
+        <Text>
+          Yes, I once was of that age, and you saw me at the homepage.
+        </Text>
         <Text>
           I grew up in Amritsar, India, a bustling city that was full of the old
           world charm, spirituality, and whole lot of tasty and spicy food.

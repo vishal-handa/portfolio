@@ -28,9 +28,10 @@ const Skills = () => {
   return (
     <Wrapper>
       <Section1>
+        {/* html */}
         <StyledProgressBar
           radius={50}
-          progress={66}
+          progress={70}
           strokeWidth={10}
           strokeColor="#CD5C5C"
           strokeLinecap="round"
@@ -43,9 +44,10 @@ const Skills = () => {
             <AiFillHtml5 size={55} fill="#CD5C5C" />
           </SVG>
         </StyledProgressBar>
+        {/* css */}
         <StyledProgressBar
           radius={50}
-          progress={66}
+          progress={65}
           strokeWidth={10}
           strokeColor="#5d9cec"
           strokeLinecap="round"
@@ -58,9 +60,10 @@ const Skills = () => {
             <IoLogoCss3 size={55} fill="#5d9cec" />
           </SVG>
         </StyledProgressBar>
+        {/* javascript */}
         <StyledProgressBar
           radius={50}
-          progress={66}
+          progress={50}
           strokeWidth={10}
           strokeColor="#EFD81D"
           strokeLinecap="round"
@@ -73,9 +76,10 @@ const Skills = () => {
             <IoLogoJavascript size={55} fill="#EFD81D" />
           </SVG>
         </StyledProgressBar>
+        {/* react */}
         <StyledProgressBar
           radius={50}
-          progress={66}
+          progress={70}
           strokeWidth={10}
           strokeColor="#5CD3F3"
           strokeLinecap="round"
@@ -88,6 +92,7 @@ const Skills = () => {
             <IoLogoReact size={55} fill="#5CD3F3" />
           </SVG>
         </StyledProgressBar>
+        {/* nodejs */}
         <StyledProgressBar
           radius={50}
           progress={66}
@@ -103,9 +108,10 @@ const Skills = () => {
             <IoLogoNodejs size={55} fill="#509941" />
           </SVG>
         </StyledProgressBar>
+        {/* mongodb */}
         <StyledProgressBar
           radius={50}
-          progress={66}
+          progress={70}
           strokeWidth={10}
           strokeColor="#95D343"
           strokeLinecap="round"
@@ -118,6 +124,7 @@ const Skills = () => {
             <DiMongodb size={55} fill="#95D343" />
           </SVG>
         </StyledProgressBar>
+        {/* redux */}
         <StyledProgressBar
           radius={50}
           progress={66}
@@ -133,9 +140,10 @@ const Skills = () => {
             <SiRedux size={55} fill="#7D42BF" />
           </SVG>
         </StyledProgressBar>
+        {/* github */}
         <StyledProgressBar
           radius={50}
-          progress={66}
+          progress={80}
           strokeWidth={10}
           strokeColor="#000000"
           strokeLinecap="round"
@@ -148,9 +156,10 @@ const Skills = () => {
             <AiFillGithub size={55} fill="#000000" />
           </SVG>
         </StyledProgressBar>
+        {/* firebase */}
         <StyledProgressBar
           radius={50}
-          progress={66}
+          progress={60}
           strokeWidth={10}
           strokeColor="#ED7E0D"
           strokeLinecap="round"
@@ -169,13 +178,13 @@ const Skills = () => {
         <Skillset>Why hire me?</Skillset>
         <Text>
           I am a responsible, goal oriented, and a meticulous person with
-          multiple skill set to put my talen to practice, to learn more and grow
-          as a professional individual.
+          multiple skill set to put my talent to practice, to learn more and
+          grow as a professional individual.
         </Text>
         <Text>
           With the knowledge of MERN stack, I have developed skills to take
-          initial, on-paper architechture to a full-fledged workign website
-          bothe through front-end and backend web developement.
+          initial, on-paper architechture to a full-fledged working website both
+          through frontend and backend web developement.
         </Text>
         <Text>
           Add to this my past experience as an administrative officer at
@@ -186,12 +195,14 @@ const Skills = () => {
             <li>Meticulousness to detailed tasks</li>
             <li>Openness to constructive criticism</li>
             <li>Expertise in working under high workload</li>
+            <li>Analytical thinking</li>
           </ul>
         </Text>
         <Text>
           I assure you that with skills mentioned above, both professional and
           personal, I can be an asset to any team or company. If you want to
-          know more do not hesitate to contact me via email, and I will get
+          know more do not hesitate to contact me via{" "}
+          <a href="mailto:vishal.handa@outlook.com">email</a>, and I will get
           right back to you.
         </Text>
       </Section2>

@@ -76,13 +76,13 @@ const Projects = () => {
             <Div>
               <Img src={project2} alt="Project 2" />
               <Explanation>
-                <H1>Blucast - Wearable Technology App</H1>
+                <H1>Blucast - Best Wearable Technology</H1>
                 <Text>
-                  The main objective was to create an e-commerce store that
-                  sells wearable technologies, and to develop a user-friendly
-                  website that allows customers to easily navigate through the
-                  dataset of 300+ products and to go through a purchase process
-                  once products had been added to their cart.
+                  An E-commerce application that was designed to sell wearable
+                  technologies, This is a user-friendly application that allows
+                  customers to easily navigate through the dataset of 300+
+                  products, and to go through a purchase process once products
+                  had been added to their cart.
                 </Text>
                 <Text>
                   Technologies used are React, Node.JS, Redux and Express.JS.
@@ -191,6 +191,23 @@ const Img = styled.img`
   width: 40%;
   object-fit: cover;
   margin: auto;
+  border: 0.5px solid gray;
+  ${onWideDesktop()} {
+    height: 30%;
+    width: 40%;
+  }
+  ${onDesktop()} {
+    height: 30%;
+    width: 40%;
+  }
+  ${onTablet()} {
+    width: 100%;
+    height: 60vh;
+  }
+  ${onPhone()} {
+    width: 100%;
+    height: 30vh;
+  }
 `;
 
 const Section = styled.section`
@@ -237,7 +254,7 @@ const Div = styled.div`
   flex-direction: row;
   margin-bottom: 20px;
   width: 100%;
-  &:nth-child(2) {
+  &:nth-of-type(2) {
     flex-direction: row-reverse;
   }
   ${onWideDesktop()} {
@@ -270,6 +287,14 @@ const H1 = styled.h1`
   margin: 0 0 1em 0;
   text-transform: uppercase;
   font-weight: 1500;
+  &::after {
+    content: "";
+    display: block;
+    background-color: #cccccc;
+    height: 1px;
+    margin: 1.5rem 0 1.75rem 0;
+    width: 5rem;
+  }
 `;
 
 const Text = styled.p`
