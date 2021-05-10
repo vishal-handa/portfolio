@@ -8,7 +8,7 @@ import {
 } from "./utils/responsivecode";
 import LazyLoad from "react-lazyload";
 import { Animated } from "react-animated-css";
-import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaMagic, FaYoutube } from "react-icons/fa";
 import project1 from "./images/project1.jpg";
 import project2 from "./images/project2.jpg";
 import project3 from "./images/project3.jpg";
@@ -31,6 +31,10 @@ const Projects = () => {
                   organisational tasks of on-campus invigilators' shifts for
                   both admin and the employees. This was the final project for
                   the bootcamp course.
+                </Text>
+                <Text>
+                  Technologies used are React, Node.JS, Express.JS, Redux and
+                  MongoDB.{" "}
                 </Text>
                 <Text>
                   Key features include:
@@ -79,6 +83,9 @@ const Projects = () => {
                   once products had been added to their cart.
                 </Text>
                 <Text>
+                  Technologies used are React, Node.JS, Redux and Express.JS.
+                </Text>
+                <Text>
                   Key features include:
                   <ul>
                     <li>Animated burger menu</li>
@@ -114,34 +121,33 @@ const Projects = () => {
               <Img src={project3} alt="Project 3" />
               <Explanation>
                 <H1>Squeaky Centaurs Game</H1>
-                <Text>Creating a game using HTML, CSS and JavaScript</Text>
+                <Text>
+                  The purpsoe of this project was to use object-oriented
+                  techniques to create a game that was loosely based on Nyan Cat
+                  game. A template was given, and a new concept of game was
+                  created using Javascript.
+                </Text>
                 <Text>
                   Key features include:
                   <ul>
-                    <li>Ability to see shifts in a calendar format</li>
-                    <li>Ability to cancel shifts and take cancelled shitfs</li>
-                    <li>Add new employees, and sort them by their status</li>
-                    <li>
-                      Create new shifts, and send mass emails by date to users
-                    </li>
-                    <li>Update, cancel and delete shifts</li>
-                    <li>Change status of employees</li>
+                    <li>DOM rendering</li>
+                    <li>Keyboard events</li>
+                    <li>Score update on different types of objects</li>
+                    <li>Game over criteria based on critical score</li>
                   </ul>
                 </Text>
                 <Icons>
                   <Anchor
-                    href={
-                      "https://github.com/vishal-handa/employee-management-system"
-                    }
+                    href={"https://github.com/vishal-handa/project-m2-nyan-cat"}
                     target="_blank"
                   >
                     <FaGithub size={25} />
                   </Anchor>
                   <Anchor
-                    href={"https://www.youtube.com/watch?v=mQHOisYC7dQ"}
+                    href={"https://squeakycentaurs.netlify.app/"}
                     target="_blank"
                   >
-                    <FaYoutube size={25} />
+                    <FaMagic size={25} />
                   </Anchor>
                 </Icons>
               </Explanation>
