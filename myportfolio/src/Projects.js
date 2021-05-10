@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import {
   onPhone,
   onDesktop,
@@ -20,6 +21,7 @@ const Projects = () => {
         <Img src={projects} alt="Profile Pic" />
       </Section1> */}
       <Section>
+        <StyledLink to={"/"}>Back</StyledLink>
         <LazyLoad height={200} offset={-100}>
           <Animated animationIn="fadeIn" isVisible={true}>
             <Div>
@@ -74,7 +76,7 @@ const Projects = () => {
             <Div>
               <Img src={project2} alt="Project 2" />
               <Explanation>
-                <H1>Wearable E-commerce App</H1>
+                <H1>Blucast - Wearable Technology App</H1>
                 <Text>
                   The main objective was to create an e-commerce store that
                   sells wearable technologies, and to develop a user-friendly
@@ -185,21 +187,56 @@ const Wrapper = styled.div`
 `;
 
 const Img = styled.img`
-  height: inherit;
+  height: 30%;
   width: 40%;
+  object-fit: cover;
+  margin: auto;
 `;
 
 const Section = styled.section`
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 3em 2.5em;
+`;
+
+const StyledLink = styled(Link)`
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #cccccc;
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: 500;
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.5em;
+  padding: 0 2em;
+  /* position: relative; */
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  width: fit-content;
+  margin: 20px;
+  &:hover {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #52cbee;
+    color: #52cbee;
+  }
+  &:active {
+    background-color: rgba(73, 200, 255, 0.05);
+  }
 `;
 
 const Div = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  width: 100%;
   &:nth-child(2) {
     flex-direction: row-reverse;
   }
@@ -223,7 +260,7 @@ const Div = styled.div`
 `;
 
 const Explanation = styled.div`
-  padding: 20px;
+  padding: 30px;
 `;
 
 const H1 = styled.h1`
