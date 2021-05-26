@@ -7,14 +7,15 @@ import {
   onTablet,
   onWideDesktop,
 } from "./utils/responsivecode";
-import about from "./images/about.jpg";
 import babypic from "./images/mypic1.jpg";
+import Gallery from "react-photo-gallery";
+import { photos } from "./images/photos";
 
 const About = () => {
   return (
     <Wrapper>
       <Section1>
-        <Img src={about} alt="Profile Pic" />
+        <Gallery photos={photos} />
       </Section1>
       <Section2>
         <StyledLink to={"/"}>Back</StyledLink>
