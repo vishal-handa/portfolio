@@ -35,6 +35,11 @@ export const photos = [
     width: 3,
   },
   {
+    src: pic7,
+    height: 9,
+    width: 16,
+  },
+  {
     src: pic4,
     height: 4,
     width: 3,
@@ -55,13 +60,6 @@ export const photos = [
     height: 4,
     width: 3,
   },
-
-  {
-    src: pic7,
-    height: 3,
-    width: 4,
-  },
-
   {
     src: pic11,
     height: 3,

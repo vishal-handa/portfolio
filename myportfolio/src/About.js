@@ -99,9 +99,9 @@ const Wrapper = styled.div`
 
 const Section1 = styled.section`
   width: 50%;
-  overflow-y: auto;
+  overflow-y: scroll;
   ${onDesktop()} {
-    height: 100%;
+    height: 200vh;
   }
   @media (max-width: 1230px) and (min-width: 981px) {
     height: inherit;
@@ -116,9 +116,7 @@ const Section1 = styled.section`
   }
 `;
 
-const StyledGallery = styled(Gallery)`
-  overflow-y: scroll;
-`;
+const StyledGallery = styled(Gallery)``;
 
 const Section2 = styled.section`
   width: 50%;
