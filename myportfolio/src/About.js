@@ -15,7 +15,7 @@ const About = () => {
   return (
     <Wrapper>
       <Section1>
-        <StyledGallery photos={photos} />
+        <Gallery photos={photos} />
       </Section1>
       <Section2>
         <StyledLink to={"/"}>Back</StyledLink>
@@ -100,6 +100,23 @@ const Wrapper = styled.div`
 const Section1 = styled.section`
   width: 50%;
   overflow-y: scroll;
+  @media only screen, (max-width: 1281px) {
+    height: 120vh;
+  }
+  ${onDesktop()} {
+    height: 200vh;
+  }
+  @media (max-width: 1230px) and (min-width: 981px) {
+    height: inherit;
+  }
+  ${onTablet()} {
+    width: 100%;
+    height: 60vh;
+  }
+  ${onPhone()} {
+    width: 100%;
+    height: 30vh;
+  }
   &::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -122,23 +139,7 @@ const Section1 = styled.section`
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #555;
   }
-  ${onDesktop()} {
-    height: 200vh;
-  }
-  @media (max-width: 1230px) and (min-width: 981px) {
-    height: inherit;
-  }
-  ${onTablet()} {
-    width: 100%;
-    height: 60vh;
-  }
-  ${onPhone()} {
-    width: 100%;
-    height: 30vh;
-  }
 `;
-
-const StyledGallery = styled(Gallery)``;
 
 const Section2 = styled.section`
   width: 50%;
