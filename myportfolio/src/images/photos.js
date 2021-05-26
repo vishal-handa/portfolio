@@ -20,9 +20,14 @@ export const photos = [
     width: 4,
   },
   {
-    src: pic2,
-    height: 3,
-    width: 4,
+    src: pic10,
+    height: 4,
+    width: 3,
+  },
+  {
+    src: pic14,
+    height: 4,
+    width: 3,
   },
   {
     src: pic3,
@@ -44,11 +49,18 @@ export const photos = [
     height: 3,
     width: 4,
   },
+
   {
     src: pic6,
     height: 3,
     width: 4,
   },
+  {
+    src: pic9,
+    height: 4,
+    width: 3,
+  },
+
   {
     src: pic7,
     height: 3,
@@ -56,24 +68,14 @@ export const photos = [
   },
 
   {
-    src: pic9,
-    height: 3,
-    width: 4,
-  },
-  {
-    src: pic10,
-    height: 3,
-    width: 4,
-  },
-  {
     src: pic11,
     height: 3,
     width: 4,
   },
   {
     src: pic12,
-    height: 3,
-    width: 4,
+    height: 4,
+    width: 3,
   },
   {
     src: pic13,
@@ -81,8 +83,8 @@ export const photos = [
     width: 4,
   },
   {
-    src: pic14,
-    height: 3,
-    width: 4,
+    src: pic2,
+    height: 9,
+    width: 16,
   },
 ];

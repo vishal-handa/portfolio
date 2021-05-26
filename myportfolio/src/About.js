@@ -75,6 +75,7 @@ const Wrapper = styled.div`
   background-color: white;
   display: flex;
   flex-direction: row;
+  height: 100%;
   ${onWideDesktop()} {
     display: flex;
     flex-direction: row;
@@ -98,8 +99,9 @@ const Wrapper = styled.div`
 
 const Section1 = styled.section`
   width: 50%;
+  overflow-y: auto;
   ${onDesktop()} {
-    height: inherit;
+    height: 100%;
   }
   @media (max-width: 1230px) and (min-width: 981px) {
     height: inherit;
@@ -112,12 +114,6 @@ const Section1 = styled.section`
     width: 100%;
     height: 30vh;
   }
-`;
-
-const Img = styled.img`
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
 `;
 
 const Section2 = styled.section`
