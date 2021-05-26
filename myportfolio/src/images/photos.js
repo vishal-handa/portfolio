@@ -11,7 +11,6 @@ import pic10 from "./gallery/pic10.jpg";
 import pic11 from "./gallery/pic11.jpg";
 import pic12 from "./gallery/pic12.jpg";
 import pic13 from "./gallery/pic13.jpg";
-import pic14 from "./gallery/pic14.jpg";
 
 export const photos = [
   {
@@ -24,11 +23,7 @@ export const photos = [
     height: 4,
     width: 3,
   },
-  {
-    src: pic14,
-    height: 4,
-    width: 3,
-  },
+
   {
     src: pic3,
     height: 4,

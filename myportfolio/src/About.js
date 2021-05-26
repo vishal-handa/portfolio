@@ -15,7 +15,7 @@ const About = () => {
   return (
     <Wrapper>
       <Section1>
-        <Gallery photos={photos} />
+        <StyledGallery photos={photos} />
       </Section1>
       <Section2>
         <StyledLink to={"/"}>Back</StyledLink>
@@ -114,6 +114,10 @@ const Section1 = styled.section`
     width: 100%;
     height: 30vh;
   }
+`;
+
+const StyledGallery = styled(Gallery)`
+  overflow-y: scroll;
 `;
 
 const Section2 = styled.section`
