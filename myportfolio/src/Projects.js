@@ -97,6 +97,7 @@ const Projects = () => {
                     <li>
                       Immediate database update and cart update on item select
                     </li>
+                    <li>Limited item selection based on available quantity</li>
                   </ul>
                 </Text>
                 <Icons>
@@ -116,7 +117,7 @@ const Projects = () => {
               </Explanation>
             </Div>
           </Animated>
-        </LazyLoad>{" "}
+        </LazyLoad>
         <LazyLoad height={200} offset={-100}>
           <Animated animationIn="fadeIn" isVisible={true}>
             <Div>
@@ -136,6 +137,8 @@ const Projects = () => {
                     <li>Keyboard events</li>
                     <li>Score update on different types of objects</li>
                     <li>Game over criteria based on critical score</li>
+                    <li>Different music for each page</li>
+                    <li>A replay button</li>
                   </ul>
                 </Text>
                 <Icons>
@@ -191,6 +194,7 @@ const Img = styled.img`
   width: 50%;
   margin: auto;
   border: 0.5px solid gray;
+
   ${onWideDesktop()} {
     height: 30%;
     width: 50%;
